@@ -1,14 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kazuhiko Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            /* Fallback if JS disabled */
+        }
+    </style>
+
 </head>
+
 <body>
-    <h1>Hello</h1>
-    <div class="container">
-        <p>ini merupakan website pribadi</p>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="CV-Kazuhiko.pdf" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hello, I’m<br><span>Muh. Hilmi Abdul Aziz</span> <small>(Kazuhiko)</small></h1>
+            <p>Front-end Developer, Desain Grafis, UI/UX Designer</p>
+        </div>
+        <div class="hero-img">
+            <img src="img/your-photo.png" alt="Kazuhiko Photo" />
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+            <li>HTML / CSS / JavaScript</li>
+            <li>React.js</li>
+            <li>Figma</li>
+            <li>Canva / Illustrator</li>
+        </ul>
+    </section>
+
+    <!-- Add sections: Projects, Experience, Education, Certificates, Contact -->
+
+    <section id="projects" class="section">
+        <h2>Web Projects</h2>
+        <div class="project-card">
+            <div class="project-info">
+                <h3>Website Sekolah</h3>
+                <p>Proyek ini dibuat untuk keperluan sekolah seperti profil sekolah, galeri kegiatan, dan formulir
+                    pendaftaran online.</p>
+                <p><strong>Teknologi:</strong> Laravel, MySQL, Figma</p>
+                <a href="#">Kunjungi</a> <!-- Ganti dengan link kamu nanti -->
+            </div>
+            <div class="project-img">
+                <img src="img/project1.png" alt="Preview Website Sekolah" />
+            </div>
+        </div>
+
+        <h2 style="margin-top: 60px;">Graphic Design Portfolio</h2>
+        <div class="design-gallery">
+            <!-- Tambahkan gambar desain kamu di sini -->
+            <img src="img/BannerHalalBihalal.png" alt="Desain 1" />
+            <img src="img/FeedHariPahlawan.png" alt="Desain 2" />
+            <img src="img/MaulidNabi.png" alt="Desain 3" />
+            <!-- Ganti dan tambah sesuai kebutuhan -->
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Work Experience</h2>
+
+        <div class="experience-card">
+            <h3>Front-end Developer <span>@ Freelance</span></h3>
+            <p class="exp-date">2023 – Sekarang</p>
+            <p class="exp-desc">
+                Saya mengerjakan UI yang diberikan oleh tim UI atau mengerjakan desain yang diberikan oleh klien secara
+                langsung.
+            </p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education</h2>
+
+        <div class="edu-card">
+            <h3>Universitas Putra Indonesia (UNPI) Cianjur</h3>
+            <p class="edu-major">Teknik Informatika</p>
+            <p class="edu-year">2020</p>
+        </div>
+
+        <div class="edu-card">
+            <h3>MA Tanwiriyyah</h3>
+            <p class="edu-major">IPA</p>
+            <p class="edu-year">2017</p>
+        </div>
+    </section>
+
+    <section id="certificates" class="section">
+        <h2>Certificates</h2>
+
+        <div class="certificate-card">
+            <div class="cert-image">
+                <img src="img/sertifikat_course_123_4314823_300125140143_001.png"
+                    alt="Sertifikat Dicoding – Belajar Dasar Pemrograman Web" />
+            </div>
+            <div class="cert-info">
+                <h3>Belajar Dasar Pemrograman Web</h3>
+                <p><strong>Lembaga:</strong> Dicoding</p>
+                <p><strong>Tahun:</strong> 2024</p>
+                <a href="https://www.dicoding.com/certificates/6RPNR6RQRX2M" target="_blank">Lihat Sertifikat</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p class="contact-item">📧 Email: <a href="mailto:diondark33@gmail.com">diondark33@gmail.com</a></p>
+        <p class="contact-item">💻 GitHub: <a href="https://github.com/FrostLeaf15" target="_blank">@FrostLeaf15</a></p>
+        <p class="contact-item">📸 Instagram: <a href="https://instagram.com/mhilmi_aa" target="_blank">@mhilmi_aa</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Kazuhiko. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll ke anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
