@@ -112,8 +112,10 @@ nav a {
 
 .project-img img {
     width: 100%;
+    aspect-ratio: 16 / 9;
     border-radius: 8px;
     box-shadow: 0 0 10px #3f9cff33;
+    object-fit: cover;
 }
 
 .design-gallery {
@@ -124,10 +126,12 @@ nav a {
 }
 
 .design-gallery img {
-    width: 200px;
+    width: 350px;
+    aspect-ratio: 4 / 3;
     border-radius: 8px;
     box-shadow: 0 0 10px #1a1f3c;
     transition: transform 0.3s ease;
+    object-fit: cover;
 }
 
 .design-gallery img:hover {
