@@ -116,6 +116,7 @@ nav a {
     border-radius: 8px;
     box-shadow: 0 0 10px #3f9cff33;
     object-fit: cover;
+    object-position: top;
 }
 
 .design-gallery {
